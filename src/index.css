@@ -1,13 +1,135 @@
+* { 
+	box-sizing: border-box;
+	margin: 0;
+  }
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    font-family: "Press Start 2P", sans-serif;
+	color: #fff;
+	background-color: black;
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.maintitle{
+  font-family: "Ruslan Display";
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+/* Form Styles */
+
+
+.rpgui-content {
+  /* set size and colors */
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+  box-sizing : border-box;
+	color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	font-size: 0.9em;
+	line-height: 32px;
+	background: #484848;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 4rem;
+
+	/* for ie */
+	min-height: 30px;
+
+	/* enable text selecting */
+	-webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+	-webkit-tap-highlight-color: rgba(0,0,0,0.5);
+}
+
+.rpgui-dropdown-imp,
+.rpgui-dropdown
+{
+	/* font */
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+	font-size: 0.8rem;
+
+	/* default size */
+ 	width: 100%;
+	min-height: 40px;
+	margin-top: 0px;
+
+	/* border */
+	border-style: solid;
+	border-width: 7px 7px 7px 7px;
+	-moz-border-image: url("/src/images/background/select-border-image.png") 10% repeat repeat;
+	-webkit-border-image: url("/src/images/background/select-border-image.png") 10% repeat repeat;
+	-o-border-image: url("/src/images/background/select-border-image.png") 10% repeat repeat;
+	border-image: url("/src/images/background/select-border-image.png") 10% repeat repeat;
+
+	/* background */
+	background: #484848;
+	background-clip: padding-box;
+	background-origin: padding-box;
+	background-position: center;
+}
+
+ul.rpgui-dropdown-imp
+{
+	padding: 0 0 0 0 !important;
+	z-index: 100;
+}
+
+/* note! this affect only the dropdown header */
+/* shows the currently selected value from select element */
+.rpgui-content, .rpgui-dropdown-imp-header
+{
+	color: white !important;
+	min-height: 22px !important;
+	padding: 5px 10px 0 10px !important;
+	margin: 0 0 0 0 !important;
+	position: relative !important;
+}
+
+/* dropdown options */
+.rpgui-dropdown-imp li
+{
+	/* font */
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+	height: 16px;
+
+	/* remove the dot */
+	list-style-type: none;
+
+	/* padding */
+
+	/* background */
+	background: #484848;
+	background-clip: padding-box;
+	background-origin: padding-box;
+	background-position: center;
+}
+
+.rpgui-boxli {
+	cursor: pointer;
+	margin-bottom: .7rem;
+	padding-right: 1.3rem;
+}
+
+/* dropdown options hover */
+.rpgui-dropdown-imp li:hover
+{
+	color: yellow;
+}
+
+/* dropdown hover */
+.rpgui-dropdown-imp:hover
+{
+	color: yellow;
+}
+
